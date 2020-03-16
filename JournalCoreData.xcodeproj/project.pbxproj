@@ -23,6 +23,7 @@
 		46AA32ED2121315F003AC495 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AA32EC2121315F003AC495 /* EntryDetailViewController.swift */; };
 		46AA32EF21213184003AC495 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AA32EE21213184003AC495 /* EntryTableViewCell.swift */; };
 		46AA32F121213236003AC495 /* TimestampFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AA32F021213236003AC495 /* TimestampFormatter.swift */; };
+		6D6A32E4242006D600C0CBE6 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6A32E3242006D600C0CBE6 /* Entry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		46AA32EE21213184003AC495 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		46AA32F021213236003AC495 /* TimestampFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampFormatter.swift; sourceTree = "<group>"; };
 		46F9C2242122456400E7FF73 /* JournalCoreData 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "JournalCoreData 2.xcdatamodel"; sourceTree = "<group>"; };
+		6D6A32E3242006D600C0CBE6 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				4697668B2123E1A400E7FF73 /* Entry+Codable.swift */,
 				469766892123E0FA00E7FF73 /* EntryRepresentation.swift */,
 				46AA32F6212132FF003AC495 /* Core Data */,
+				6D6A32E3242006D600C0CBE6 /* Entry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6A32E4242006D600C0CBE6 /* Entry.swift in Sources */,
 				462A2D592122C6DF00E7FF73 /* Mood.swift in Sources */,
 				4697668C2123E1A400E7FF73 /* Entry+Codable.swift in Sources */,
 				46AA32EF21213184003AC495 /* EntryTableViewCell.swift in Sources */,

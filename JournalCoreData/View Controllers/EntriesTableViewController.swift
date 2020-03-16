@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class EntriesTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -93,6 +93,8 @@ class EntriesTableViewController: UITableViewController, NSFetchedResultsControl
         case .delete:
             guard let indexPath = indexPath else { return }
             tableView.deleteRows(at: [indexPath], with: .automatic)
+        @unknown default:
+            break
         }
     }
     
@@ -104,13 +106,10 @@ class EntriesTableViewController: UITableViewController, NSFetchedResultsControl
         switch segue.identifier {
         case "CreateEntry":
             guard let destinationVC = segue.destination as? EntryDetailViewController else { return }
-            
             destinationVC.entryController = entryController
-            
         case "ViewEntry":
             guard let destinationVC = segue.destination as? EntryDetailViewController,
-                let indexPath = tableView.indexPathForSelectedRow else { return }
-            
+            let indexPath = tableView.indexPathForSelectedRow else { return }
             destinationVC.entry = fetchedResultsController.object(at: indexPath)
             
         default:
